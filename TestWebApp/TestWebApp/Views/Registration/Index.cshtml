@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Registration:";
+}
+<h2>@ViewBag.Title</h2>
+
+<div align="justify">
+    <p>Assignment 4 Registration Form:</p>
+    <table border="0">
+        <tr>
+            <th>
+                First Name:
+            </th>
+
+            <th>
+                @Html.TextBox("nameFirst")
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                Last Name:
+            </th>
+
+            <th>
+                @Html.TextBox("nameLast")
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                Gender:
+            </th>
+
+            <th>
+                &nbsp;
+                <label>@Html.RadioButton("ABC", "MALE")Male</label>
+                &nbsp;&nbsp;
+                <label>@Html.RadioButton("ABC", "FEMALE")Female</label>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                Email Address: &nbsp;
+            </th>
+
+            <th>
+                @Html.TextBox("emailAddress")
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                Password:
+            </th>
+
+            <th>
+                @Html.Password("password")
+            </th>
+        </tr>
+
+        <tr><th><p>&nbsp;</p></th></tr>
+
+        <tr>
+            <th class="text-right">
+                <input type="button" id="btnClear" value="Clear " />
+            </th>
+
+            <th>
+                <input type="button" id="btnSubmit" value="Submit  " />
+            </th>
+        </tr>
+    </table>
+</div>

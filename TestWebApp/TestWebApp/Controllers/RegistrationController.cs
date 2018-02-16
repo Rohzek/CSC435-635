@@ -6,24 +6,16 @@ using System.Web.Mvc;
 
 namespace TestWebApp.Controllers
 {
-    public class HomeController : Controller
+    [RequireHttps]
+    public class RegistrationController : Controller
     {
+        // GET: Registration
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
-        {
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            return View();
-        }
-
-        public ActionResult Login()
+        public ActionResult Registration()
         {
             return View();
         }
