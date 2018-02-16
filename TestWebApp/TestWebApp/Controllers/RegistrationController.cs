@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace TestWebApp.Controllers
 {
+    [RequireHttps]
     public class RegistrationController : Controller
     {
         // GET: Registration
